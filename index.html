@@ -1,55 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/styles.css">
-  <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width: 1440px)">
   <title>Frontend Mentor | Profile card component</title>
 
 </head>
+
 <body>
-  <main >
-    <div class="card">
-      <figure>
-        <img src="./images/bg-pattern-card.svg" alt="Cover image" class="cover-image">
-      </figure>
-      <div class="content">
-        <figure>
-          <img src="./images/image-victor.jpg" alt="Profile image" class="profile-image">
-        </figure>
-        
-        <div class="main-info">
-          <p>
-            <span>Victor Crest</span> 26
-          </p>
-          <p class="country">London</p>
-        </div>
+  <main class="card">
+    <div class="top-section">
+      <img class="photo" src="./images/image-victor.jpg" alt="Profile picture">
+    </div>
+    <div class="middle-section">
+      <p class="name">Victor Crest</p>
+      <p class="age">26</p>
+      <br>
+      <p class="city">London</p>
+    </div>
+    <div class="bottom-section">
+      <div>
+        <p class="numbers">80K</p>
+        <p class="social-stats">Followers</p>
       </div>
-
-      <hr>
-
-      <div class="content">
-        <div class="data">
-          <p class="item">
-            <span>80K</span>
-            Followers
-          </p>
-          <p class="item">
-            <span>803K</span>
-            Likes
-          </p>
-          <p class="item">
-            <span>1.4K</span>
-            Photos
-          </p>
-        </div>
+      <div>
+        <p class="numbers">803K</p>
+        <p class="social-stats">Likes</p>
+      </div>
+      <div>
+        <p class="numbers">1.4K</p>
+        <p class="social-stats">Photos</p>
       </div>
     </div>
   </main>
@@ -59,4 +47,5 @@
     Coded by <a href="https://github.com/ValeriaMontoya" target="_blank">Valeria Montoya</a>.
   </footer>
 </body>
+
 </html>

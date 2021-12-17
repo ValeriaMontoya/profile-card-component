@@ -4,7 +4,7 @@
   --dark-desaturated-blue: hsl(229, 23%, 23%);
   --dark-grayish-blue: hsl(227, 10%, 46%);
   --dark-gray: hsl(0, 0%, 59%);
-  --line-color: #e9e9e9;
+  --line-color: #e5e8e8;
 
   /* Typography */
   --primary-font: "Kumbh Sans", sans-serif;
@@ -21,4 +21,106 @@
 
 html {
   font-size: 62.5%;
+}
+
+body {
+  background-image: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg");
+  background-position: right 50vw bottom 10vh, left 40vw top 55vh;
+  background-repeat: no-repeat;
+  font-size: var(--font-size-medium);
+  background-color: var(--dark-cyan);
+  font-family: var(--primary-font);
+  text-align: center;
+}
+
+p {
+  display: inline-block;
+  margin: 3px 3% 3px;
+}
+
+.card {
+  display: inline-block;
+  margin: 20vh auto 0 auto;
+  height: 21.25rem;
+  width: 340px;
+}
+
+.top-section {
+  background-image: url("../images/bg-pattern-card.svg");
+  border-radius: 0.9375rem 0.9375rem 0 0;
+  height: 60%;
+  position: relative;
+}
+
+.middle-section {
+  font-size: var(--font-size-medium);
+  background-color: white;
+  border-bottom: solid 0.0625rem var(--line-color);
+  padding: 0 0 2rem;
+  line-height: 2.8rem;
+}
+
+.bottom-section {
+  background-color: white;
+  border-radius: 0 0 0.9375rem 0.9375rem;
+  padding: 2rem 0;
+}
+
+.age {
+  color: var(--dark-gray);
+  font-weight: 400;
+  font-size: var(--font-size-large);
+  margin-left: -0.25rem;
+}
+
+.city {
+  color: var(--dark-gray);
+  font-weight: 400;
+  font-size: var(--font-size-medium);
+}
+
+.name {
+  margin-top: 18%;
+  font-weight: 700;
+  font-size: var(--font-size-large);
+  color: var(--dark-desaturated-blue);
+}
+
+.photo {
+  background-color: white;
+  border: 0.35rem solid white;
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+}
+
+.bottom-section div {
+  display: inline-block;
+}
+
+.numbers {
+  font-weight: 700;
+  color: var(--dark-desaturated-blue);
+  font-size: var(--font-size-large);
+}
+
+.social-stats {
+  color: var(--dark-gray);
+  font-size: var(--font-size-small);
+  letter-spacing: 2px;
+}
+
+.attribution {
+  color: white;
+  margin-top: 40px;
+}
+
+.attribution a {
+  color: var(--dark-desaturated-blue);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: black;
 }
